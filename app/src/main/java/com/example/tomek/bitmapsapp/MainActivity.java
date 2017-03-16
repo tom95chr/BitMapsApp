@@ -27,13 +27,17 @@ public class MainActivity extends AppCompatActivity {
         Bitmap temp = BitmapFactory.decodeResource(getResources(), R.drawable.room);
         bmp=temp.copy(Bitmap.Config.ARGB_8888, true);
     }
+    public void alibaba(View v){
+        Bitmap temp = BitmapFactory.decodeResource(getResources(), R.drawable.ali);
+        bmp=temp.copy(Bitmap.Config.ARGB_8888, true);
+        kliknij(v);
+    }
 /*    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }*/
-    public void
-    kliknij( View v)
+    public void kliknij( View v)
     {
         rysuj();
         obraz.setImageBitmap(bmp);
