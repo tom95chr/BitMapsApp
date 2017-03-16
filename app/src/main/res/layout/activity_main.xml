@@ -18,30 +18,33 @@
         android:layout_alignParentTop="true"
         android:onClick="kliknij"
         android:text="Start" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:src="@drawable/room"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_height="350dp" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button1"
         android:onClick="kliknij_kolka"
-        android:text="Kółka" />
+        android:text="Kółka"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button1" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView1"
-        android:layout_toRightOf="@+id/button2"
         android:onClick="kliknij_kreski"
-        android:text="Kreski" />
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/room" />
+        android:text="Kreski"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button2" />
 
     <TextView
         android:id="@+id/textView1"
@@ -50,6 +53,18 @@
         android:layout_marginLeft="14dp"
         android:text="Info"
         android:textColor="#000000"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/button2"
-        android:layout_toStartOf="@+id/button3" />
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Ali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ali"
+        android:onClick="alibaba"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
 </RelativeLayout>
